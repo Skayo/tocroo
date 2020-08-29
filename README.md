@@ -11,9 +11,9 @@
 
 ## Installation
 
-```shell
-$ shards install
-$ shards build --release
+```console
+foo@bar:~$ shards install
+foo@bar:~$ shards build --release
 ```
 
 After the build has *finished*, the binary can be found at `./bin/tocroo`.  
@@ -21,45 +21,45 @@ Add it to **PATH** to use it **globally**!
 
 Before running the first time, you have to create the SQLite3 database.  
 This can be achieved with:
-```shell
-$ tocroo init
+```console
+foo@bar:~$ tocroo init
 [SUCCESS] Database created.
 ```
 
 ## Usage
 
-```shell
-$ tocroo add This is a task
+```console
+foo@bar:~$ tocroo add This is a task
 [SUCCESS] Task added.
 
-$ tocroo list
+foo@bar:~$ tocroo list
 
 TASKS
 1       [ ]     This is a task  Sat Aug 29 00:58:51 2020
 
-$ tocroo update 1 This is a cool task
+foo@bar:~$ tocroo update 1 This is a cool task
 [SUCCESS] Task #1 updated.
 
-$ tocroo list
+foo@bar:~$ tocroo list
 
 TASKS
 1       [ ]     This is a cool task     Sat Aug 29 00:58:51 2020
 
-$ tocroo done 1
+foo@bar:~$ tocroo done 1
 [SUCCESS] Task #1 completed.
 
-$ tocroo list --all
+foo@bar:~$ tocroo list --all
 
 TASKS
 1       [X]     This is a cool task     Sat Aug 29 00:58:51 2020
 
-$ tocroo delete 1
+foo@bar:~$ tocroo delete 1
 [SUCCESS] Task #1 deleted.
 ----- OR -----
-$ tocroo delete --all
+foo@bar:~$ tocroo delete --all
 [SUCCESS] All tasks deleted.
 
-$ tocroo list --all
+foo@bar:~$ tocroo list --all
 
 TASKS
 No tasks...
