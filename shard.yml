@@ -1,0 +1,17 @@
+name: tocroo
+version: 0.1.0
+
+authors:
+  - Skayo <contact@skayo.dev>
+
+targets:
+  tocroo:
+    main: src/tocroo.cr
+
+dependencies:
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+
+crystal: 0.35.1
+
+license: MIT
